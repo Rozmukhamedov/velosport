@@ -680,6 +680,7 @@ a {
 }
 
 .news .image-box img {
+  object-fit: cover;
   max-width: 100%;
   transition: all 0.3s;
   display: block;
@@ -773,78 +774,162 @@ a {
   color: #fff;
 }
 
-/* //////////////////// */
-/* 
-.slider-wrapper {
-  width: 100%;
+.slick-slide img {
+  margin: 0 20px;
 }
 
-.slide {
-  width: 100%;
-  height: 398px;
-  background: #ccc;
+/* /////// slide main //////// */
+
+.sliderContainer {
+  position: relative;
 }
 
-.slick-dots li button:before {
-  display: none !important;
+.slider {
+  width: 100%;
+  height: 750px;
+}
+
+.slick-slide {
+  color: white;
+  padding: 80px 0 120px;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+  height: 750px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-dots {
+  bottom: -30px;
 }
 
 .progressBarContainer {
-  width: 100%;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.progressBarContainer li {
+  position: absolute;
+  top: 20%;
+  width: 300px;
+  right: 10%;
   display: flex;
-  width: 80px;
-  margin-right: 15px;
+  flex-direction: column;
+}
+
+.progressBarContainer div {
+  display: block;
+  width: 70%;
   padding: 0;
   cursor: pointer;
+  margin-right: 5%;
+  float: left;
   color: white;
-  list-style: none;
-  flex-direction: row;
 }
-.progressBarContainer li:last-child {
+
+.progressBarContainer div:last-child {
   margin-right: 0;
 }
-.progressBarContainer .progressBar {
+
+.progressBarContainer div span.progressBar {
   width: 100%;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.4);
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
   display: block;
 }
-.progressBarContainer .inProgress {
-  background-color: white;
+
+.progressBarContainer div span.progressBar .inProgress {
+  background-color: #01a33c;
   width: 0%;
-  height: 3px;
+  height: 2px;
 }
 
-.fullbanner .slick-dots {
-  position: relative;
-  display: flex;
-  bottom: 0 !important;
-}
-.fullbanner .slick-dots button {
-  width: 100%;
-  height: 4px;
-  border: none;
-  padding-left: 0;
-  padding-right: 0;
+.progressBarContainer .item {
+  margin-bottom: 50px;
 }
 
-img {
-  width: 100%;
+.progressBarContainer .item h3 {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+
+.progressBarContainer .item h3:hover {
+  color: #fff;
+}
+
+.sliderContainer .slider .slick-slide {
+  padding: 0;
+}
+
+.sliderContainer .slider .slick-slide img {
+  margin: 0;
+  object-fit: cover;
+}
+
+.sliderContainer .slider .slick-slide:after {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-} */
-
-/* .carousel-item img {
   width: 100%;
-  height: 500px;
+  content: " ";
+  z-index: 1;
+  display: block;
+  background-color: rgba(2, 2, 2, 0.43);
 }
 
-*/
-.slick-slide img {
-  margin: 0 20px;
+.sliderContainer .slider .text-slide {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  left: 15%;
+  text-align: left;
+}
+
+.sliderContainer .slider .text-slide p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sliderContainer .slider .text-slide h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.sliderContainer .slider .text-slide a:hover {
+  color: #01a33c;
+}
+
+.sliderContainer .slider .text-slide button {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #01a33c;
+  padding: 15px 30px 15px 35px;
+  border: none;
+}
+
+.sliderContainer .slider .text-slide button:hover {
+  background: #fff;
+  color: #01a33c;
+}
+
+.sliderContainer .slider .text-slide button .fa {
+  margin-left: 10px;
 }
