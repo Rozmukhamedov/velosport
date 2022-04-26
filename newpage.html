@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <title>Uzveloteam!</title>
+    <title>New Page!</title>
 </head>
 
 <body>
@@ -65,98 +64,73 @@
         <i class="fa fa-times" aria-hidden="true"></i>
     </button>
 
-
     <div style="position: relative;" id="main">
-        <section class="header">
-            <nav class="navbar position-absolute navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img
-                            src="https://uzveloteam.com/wp-content/uploads/2022/01/tashkent-city-cycling-team-logo-2.png"
-                            alt=""></a>
-                    <button onClick="offCanvasOpen();" class="navbar-toggler button-open" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i>
-                        </span>
-                    </button>
+        <section class="header-main" style="margin: 0; height: 70vh;">
+            <div class="header">
+                <nav class="navbar position-absolute navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><img
+                                src="https://uzveloteam.com/wp-content/uploads/2022/01/tashkent-city-cycling-team-logo-2.png"
+                                alt=""></a>
+                        <button onClick="offCanvasOpen();" class="navbar-toggler button-open" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i>
+                            </span>
+                        </button>
 
-                    <div onClick="offCanvasClose()" id="visible" class="side-nav-mask"></div>
-                </div>
-            </nav>
+                        <div onClick="offCanvasClose()" id="visible" class="side-nav-mask"></div>
+                    </div>
+                </nav>
+            </div>
+
         </section>
-        <section class="title-page">
+        <section class="title-new-page"
+            style="z-index: 10; position: absolute; top: 120px; text-align: center; width: 100%;">
             <div class="container">
-                <h1>MEET OUR PARTNERS</h1>
-                <p>Learn more about each brand and how they support the team.</p>
+                <button class="wow animate__fadeIn" data-wow-duration="1s"><a href="news.html">news</a></button>
+                <h1 class="wow animate__fadeIn" data-wow-duration="1s">НАША ВЕЛОСПОРТСМЕНКА <br> СОФИЯ КАРИМОВА
+                    ЗАНЯЛА <br> ПРИЗОВОЕ МЕСТО В ТУРЦИИ</h1>
+                <p class="wow animate__fadeIn" data-wow-duration="1s">07.02.2022</p>
             </div>
         </section>
-        <section class="information-cards">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                        <div class="card">
-                            <div class="img-box">
-                                <img src="https://uzveloteam.com/wp-content/uploads/2020/02/guillaume-briard-lSXpV8bDeMA-unsplash.jpg"
-                                    class="img-fluid">
-                            </div>
-                            <div class="card-bottom">
-                                <h3> Adopt a fascinating mountain goat</h3>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="img-box">
-                                <img src="https://uzveloteam.com/wp-content/uploads/2017/09/jake-blucker-316192-1.jpg"
-                                    class="img-fluid">
-                            </div>
-                            <div class="card-bottom">
-                                <h3> Doing a cross country road trip</h3>
-                            </div>
-                        </div>
+        <section class="newpage">
+            <div class="container">
+                <video width="100%" height="500" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="wpb_wrapper">
+                    <p>Член профессиональной велокоманды «Tashkent city professional cycling team»<span
+                            class="Apple-converted-space">&nbsp; </span>Нафосат Козиева оказалась на 14-й позиции. Её
+                        сокомандница Мадина Каххарова стала 26-й, Шахноза Абдуллаева — 29-ой, Анна Кускова — 32-й, Елена
+                        Зайцева — 36-й, Анна Куликова и Ирина Брезина заняли 39 и 40-ую позиции соответственно.
+                        Маргарита Мисюрина стала 45-ой. К сожалению, нашему лидеру Янине Кусковой пришлось менять
+                        колесо, финишировала она 48-ой.</p>
+                    <p>Отметим, всего в гонке приняли участие 58 велоспортсменок, 5 из которых не смогли добраться до
+                        финишной прямой.</p>
+                    <p>А мы ещё раз поздравляем нашу соотечественницу Софию Каримову с призовым местом!</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="slick-carousel">
+                    <!-- Inside the containing div, add one div for each slide -->
+                    <div>
+                        <!-- You can put an image or text inside each slide div -->
+                        <img src="https://uzveloteam.com/wp-content/uploads/2022/01/S1Z2997.jpg">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                        <div class="card">
-                            <div class="img-box">
-                                <img src="https://uzveloteam.com/wp-content/uploads/2013/03/steven-pahel-354193.jpg"
-                                    class="img-fluid">
-                            </div>
-                            <div class="card-bottom">
-                                <h3> Deep down in the water</h3>
-                                <div class="button-play"><i class="fa fa-play" aria-hidden="true"></i></div>
-                            </div>
-
-                        </div>
+                    <div>
+                        <img src="https://uzveloteam.com/wp-content/uploads/2022/01/S1Z3008.jpg">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                        <div class="card">
-                            <div class="img-box">
-                                <img src="https://uzveloteam.com/wp-content/uploads/2013/02/kimon-maritz-181128.jpg"
-                                    class="img-fluid">
-                            </div>
-                            <div class="card-bottom">
-                                <h3> Ambrose Redmoon</h3>
-                            </div>
-                        </div>
+                    <div>
+                        <img src="https://uzveloteam.com/wp-content/uploads/2022/01/S1Z3011.jpg">
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                        <div class="card">
-                            <div class="img-box">
-                                <img src="https://uzveloteam.com/wp-content/uploads/2013/02/diana-macesanu-276771.jpg"
-                                    class="img-fluid">
-                            </div>
-                            <div class="card-bottom">
-                                <h3> We hired a new employee</h3>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="img-box">
-                                <img src="https://uzveloteam.com/wp-content/uploads/2017/10/alesia-kazantceva-283291.jpg"
-                                    class="img-fluid">
-                            </div>
-                            <div class="card-bottom">
-                                <h3> 10 Tips for what to do downtown</h3>
-                            </div>
-                        </div>
-
+                    <div>
+                        <img src="https://uzveloteam.com/wp-content/uploads/2022/01/S1Z3023.jpg">
+                    </div>
+                    <div>
+                        <img src="https://uzveloteam.com/wp-content/uploads/2022/01/3_00086557.jpg">
                     </div>
                 </div>
             </div>
@@ -181,6 +155,8 @@
                             src="https://uzveloteam.com/wp-content/uploads/2022/01/b-jeans-2-копия.png" alt=""></div>
                 </div>
             </div>
+
+
         </section>
         <section class="footer">
             <div class="container">
@@ -211,7 +187,6 @@
     <script src="js/slick/slick.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/javascript.js"></script>
-
 </body>
 
 </html>

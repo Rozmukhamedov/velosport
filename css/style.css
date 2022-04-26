@@ -923,6 +923,7 @@ a {
   background: #01a33c;
   padding: 15px 30px 15px 35px;
   border: none;
+  margin-top: 50px;
 }
 
 .sliderContainer .slider .text-slide button:hover {
@@ -932,4 +933,57 @@ a {
 
 .sliderContainer .slider .text-slide button .fa {
   margin-left: 10px;
+}
+
+.newpage {
+  padding-top: 60px;
+  background: #fff;
+}
+
+.newpage video {
+  margin-bottom: 60px;
+}
+
+.newpage p {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.title-new-page h1 {
+  font-size: 80px;
+  font-weight: 600;
+  padding: 20px 0;
+  line-height: 90px;
+  color: #fff;
+}
+
+.title-new-page p {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 14px;
+  color: #fff;
+}
+
+.title-new-page button {
+  font-family: "Oswald", sans-serif;
+  background: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 5px 10px 10px 10px;
+  border: 1px solid #fff;
+}
+
+.title-new-page button:hover {
+  background: #01a33c;
+  border: 1px solid #01a33c;
+}
+
+.title-new-page button a {
+  color: #fff;
 }

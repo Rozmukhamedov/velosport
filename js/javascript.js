@@ -1,8 +1,8 @@
 new WOW().init();
 
 const offCanvasOpen = () => {
-    document.getElementById('main').style.cssText = '-webkit-transform-origin: center; transform-origin: center;-webkit-transform: scale(0.8) translateX(-32vw) translateZ(0); transform: scale(0.8) translateX(-32vw) translateZ(0); overflow: hidden; height: 100vh;';
-    document.getElementById('visible').style.cssText = 'transition-delay: 0; visibility: visible; opacity: 0.1;';
+    document.getElementById('main').style.cssText = 'transition: transform .3s ease-in-out; -webkit-transform-origin: center; transform-origin: center; -webkit-transform: scale(0.8) translateX(-32vw) translateZ(0); transform: scale(0.8) translateX(-32vw) translateZ(0); overflow: hidden; height: 100vh;';
+    document.getElementById('visible').style.cssText = 'transition-delay: 0;  visibility: visible; opacity: 0.1;';
     document.getElementById('button_close_navbar').style.cssText = 'z-index: 3;';
     document.getElementById('menu').style.cssText = 'z-index: 3;';
 
