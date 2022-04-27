@@ -101,6 +101,9 @@ a {
 }
 
 .slide-out-from-right {
+  display: flex;
+  justify-content: start;
+  align-items: center;
   position: absolute;
   right: 0;
   top: 0;
