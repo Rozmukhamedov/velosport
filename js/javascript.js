@@ -173,3 +173,14 @@ $('.item').click(function () {
     $('.single-item').slick('slickGoTo', goToThisIndex, false);
     startProgressbar();
 });
+
+$('.clickme').click(function () {
+    if (!$(this).data('status')) {
+        $(this).html('en');
+        $(this).data('status', true);
+    }
+    else {
+        $(this).html('ru');
+        $(this).data('status', false);
+    }
+});

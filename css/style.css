@@ -263,6 +263,14 @@ a {
   border: #000;
 }
 
+.header .navbar button {
+  font-size: 24px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+}
+
 .title-page {
   padding: 150px 0 70px 0;
 }
